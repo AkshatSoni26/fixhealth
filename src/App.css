@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+body{
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+main{
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#HeroImage {
+  margin: 0;
+  padding: 0;
+  background: url('./images/test.webp') no-repeat;
+  background-size: cover;
+  height: 100vh; /* Set the height to the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#BookingForm{
+  position: absolute;
+  background-color: black ;
+  border-radius: 16px;
+  top:10%;
+  width: 30%;
+  box-shadow: 0 0 10px 0px black;
+}
+
+.TestimonialCard{
+  background-color: white;
+}
+
+.cta-line{
+  font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33;
+    color: white;
+}
+
+/* Style for the input box */
+input {
+  border: none; /* Remove default borders */
+  background-color: black;
+  color: white;
+}
+
+input:focus{
+  outline: none;
+}
+
+.cta-btn{
+  background-color: #00ACC1 !important;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS Reset for Button */
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"], textarea {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+textarea {
+  border-bottom: 2px solid white;
+}
+
+
+/* Standard syntax */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Webkit/Blink browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
