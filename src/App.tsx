@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import BookingForm from './components/booking-form/BookingForm';
 import Testimonials from './components/testimonials/Testimonials';
 import HeroImage from './components/hero-image/HeroImage';

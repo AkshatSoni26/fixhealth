@@ -8,64 +8,84 @@
 
 
 
-body{
+body {
   background-color: black;
   color: white;
 }
 
-main{
+main {
   position: relative;
 }
 
 #HeroImage {
   margin: 0;
   padding: 0;
-  background: url('./images/test.webp') no-repeat;
+  background: url('../images/test.webp') no-repeat;
   background-size: cover;
-  height: 100vh; /* Set the height to the full viewport height */
+  height: 100vh;
+  /* Set the height to the full viewport height */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 
-#BookingForm{
+#BookingForm {
   position: absolute;
-  background-color: black ;
+  background-color: black;
   border-radius: 16px;
-  top:10%;
+  top: 10%;
   width: 30%;
   box-shadow: 0 0 10px 0px black;
 }
 
-.TestimonialCard{
+.TestimonialCard {
   background-color: white;
 }
 
-.cta-line{
+.cta-line {
   font-weight: 600;
-    font-size: 24px;
-    line-height: 1.33;
-    color: white;
+  font-size: 24px;
+  line-height: 1.33;
+  color: white;
 }
 
 /* Style for the input box */
 input {
-  border: none; /* Remove default borders */
+  border: none;
+  /* Remove default borders */
   background-color: black;
   color: white;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
-.cta-btn{
+.cta-btn {
   background-color: #00ACC1 !important;
   border-radius: 10px;
 }
 
 
+@media (max-width: 900px) {
+  #BookingForm {
+    position: relative;
+    background-color: black;
+    border-radius: 16px;
+    top: 10%;
+    width: 70%;
+    box-shadow: 0 0 8px -3px white;
+  }
+  #HeroImage{
+    height: 50vh;
+  }
+  .for-second-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 
 
@@ -95,7 +115,8 @@ input:focus{
 button,
 input[type="button"],
 input[type="submit"],
-input[type="reset"], textarea {
+input[type="reset"],
+textarea {
   background: none;
   border: none;
   margin: 0;
