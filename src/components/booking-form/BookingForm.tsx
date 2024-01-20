@@ -4,6 +4,7 @@ import { FormType } from "./type";
 import Form2 from "./Form2";
 import Form3 from "./Form3";
 import Form4 from "./Form4";
+import Results from "./Results";
 
 
 
@@ -11,6 +12,7 @@ function BookingForm() {
 
     const [formType, setFormType] = useState(FormType.name)
     const [age, setAge] = useState()
+    const [city, setCity] = useState('')
 
     function onClick(nextform: FormType) {
         setFormType(nextform)
@@ -18,6 +20,10 @@ function BookingForm() {
 
     function handleSetAge(age: any) {
         setAge(age)
+    }
+
+    function handleSetCity(city: string){
+        setCity(city)
     }
 
     return (
@@ -29,23 +35,21 @@ function BookingForm() {
                 }
                 {
                     formType === FormType.age &&
-                    <Form2 onClick={onClick} setAge={handleSetAge} />
+                    <Form2 onClick={onClick} setAge={handleSetAge} setCity={handleSetCity} />
                 }
                 {
                     formType === FormType.complaint &&
-                    <Form3 onClick={onClick} age={age}/>
+                    <Form3 onClick={onClick} age={age} city={city}/>
                 }
                 {
                     formType === FormType.experience &&
-                    <Form4 onClick={onClick} />
+                    <Form4 onClick={onClick} city={city}/>
                 }
 
                 {/* results */}
                 {
                     formType === FormType.realted_doctors &&
-                    <div>
-                        this is realted doctors for you
-                    </div>
+                    <Results />
                 }
             </div>
         </div>

@@ -1,7 +1,9 @@
 import React from 'react'
 import { FormParams, FormType } from './type'
+import { useNavigate } from 'react-router-dom'
 
-function Form3({ onClick, age }: FormParams) {
+function Form3({ onClick, age, city }: FormParams) {
+    const navigate = useNavigate()
     return (
         <>
             <h2 className='cta-line d-flex flex-column justify-content-center align-items-center'>
@@ -16,6 +18,7 @@ function Form3({ onClick, age }: FormParams) {
                     }
                     else {
                         onClick(FormType.realted_doctors)
+                        navigate(`/${city}`)
                     }
                 }} />
             </form>

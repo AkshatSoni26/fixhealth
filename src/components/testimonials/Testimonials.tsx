@@ -58,7 +58,7 @@ function Testimonials() {
             >  
             {
                 [...Array(15)].map(
-                    (i) => <TestimonialCard />
+                    (i, j) => <TestimonialCard  key={j}/>
                 )
             }
             </Carousel>

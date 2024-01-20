@@ -1,7 +1,7 @@
 import React from 'react'
 import { FormParams, FormType } from './type'
 
-function Form2({onClick, setAge}: FormParams) {
+function Form2({onClick, setAge, setCity}: FormParams) {
     return (
         <>
             <h2 className='cta-line d-flex flex-column justify-content-center align-items-center'>
@@ -12,7 +12,7 @@ function Form2({onClick, setAge}: FormParams) {
                     <input type="number" placeholder='Age' onChange={(e) => setAge?.(e.target.value)} />
                 </div>
                 <div className='d-flex my-1 w-75' style={{ borderBottom: '2px solid white' }}>
-                    <input type="text" placeholder="City" />
+                    <input type="text" placeholder="City" onChange={(e) => setCity(e.target.value)}/>
                 </div>
                 <div className='d-flex my-1 w-75' style={{ borderBottom: '2px solid white' }}>
                     <input type="text" placeholder="Company" />

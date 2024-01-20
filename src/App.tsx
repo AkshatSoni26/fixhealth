@@ -1,15 +1,21 @@
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import './css/App.css';
-import BookingForm from './components/booking-form/BookingForm';
-import Testimonials from './components/testimonials/Testimonials';
-import HeroImage from './components/hero-image/HeroImage';
+import Main from './pages/Main';
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path='/' element={<Main />} />
+      <Route path='/:city' element={<Main />} />
+    </>
+  )
+)
+
 
 function App() {
   return (
-    <main>
-      <HeroImage />
-      <BookingForm />
-      <Testimonials />
-    </main>
+    <RouterProvider router={router} />
   );
 }
 

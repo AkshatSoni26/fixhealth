@@ -1,0 +1,1 @@
+export const url = "https://api.jsonbin.io/v3/b/65ab5d5adc7465401897008c"
