@@ -67,6 +67,19 @@ input:focus {
   border-radius: 10px;
 }
 
+.doc-img{
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* .results{
+    background-color: black;
+    border-radius: 16px;
+    top: 10%;
+    width: 540px;
+    box-shadow: 0 0 8px -3px white;
+} */
+
 
 @media (max-width: 900px) {
   #BookingForm {
@@ -96,7 +109,25 @@ input:focus {
 
 
 
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 
 
 
